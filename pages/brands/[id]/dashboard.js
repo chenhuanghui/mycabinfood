@@ -23,6 +23,8 @@ const workingHoursObject = new WorkingHoursEntity()
 const OwnerEntity = require("../../../entity/OwnerEntity")
 const ownerObject = new OwnerEntity()
 
+
+
 export default class LayoutDashboard extends React.Component {
     
     static async getInitialProps({query}) {        
