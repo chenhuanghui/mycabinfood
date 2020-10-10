@@ -131,7 +131,7 @@ export default class NavBarNew extends React.Component {
                             <div className="dropup">
                                 <a href="#" id="sidebarIconCopy" className="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <div className="avatar avatar-sm avatar-online">
-                                        <img src={user.avatar ? user.avatar[0].url : "../assets/img/avatars/profiles/avatar-1.jpg"} className="avatar-img rounded-circle" alt={user.name}/>
+                                        <img src={user.avatar ? user.avatar[0].url : "/assets/img/avatars/profiles/avatar-1.jpg"} className="avatar-img rounded-circle" alt={user.name}/>
                                     </div>
                                 </a>
                                 {/* Menu */}

@@ -210,7 +210,7 @@ export default class LayoutInfo extends React.Component {
                     {this.state.openModal 
                     ? <ModalCreateProduct 
                         onClosed = {()=> {
-                            this.state.setState({openModal: false})
+                            this.setState({openModal: false})
                         }}
                     />
                     : null}
