@@ -5,13 +5,17 @@
         "start": "next start"
     },
     "dependencies": {
+        "@loadable/component": "^5.13.2",
         "airtable-plus": "^1.0.4",
+        "filestack-react": "^3.2.1",
         "jquery": "^3.5.1",
         "next": "^9.5.3",
         "nookies": "^2.4.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
+        "react-filter-search": "^1.0.11",
         "react-markdown": "^4.3.1",
-        "react-multi-carousel": "^2.5.5"
+        "react-multi-carousel": "^2.5.5",
+        "react-textarea-autosize": "^8.2.0"
     }
 }

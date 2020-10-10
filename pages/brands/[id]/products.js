@@ -2,15 +2,13 @@ import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
 import $, { data } from 'jquery'
-import NavBar from "../../../../components_v2/nav"
-import ModalCreateProduct from "../../../../components_v2/modalCreateProduct"
-import BubbleModal from '../../../../components_v2/modal/bubble-modal';
-import EditProductDialog from '../../../../resources/page_compoments/products/edit-product-dialog';
+import NavBar from "../../../components_v2/nav"
+import ModalCreateProduct from "../../../components_v2/modalCreateProduct"
 // import {Input} from 'react-bootstrap';
-import ShowProduct from '../../../../components_v2/products/showProduct'
-import AddProduct from '../../../../components_v2/products/addProduct'
+import ShowProduct from '../../../components_v2/products/showProduct'
+import AddProduct from '../../../components_v2/products/addProduct'
 
-const BrandEntity = require("../../../../entity/BrandEntity")
+const BrandEntity = require("../../../entity/BrandEntity")
 const brandObject = new BrandEntity()
 
 export default class LayoutInfo extends React.Component {

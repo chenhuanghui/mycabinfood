@@ -3,10 +3,10 @@ import React from 'react';
 import Router from 'next/router';
 import { parseCookies, setCookie, destroyCookie } from 'nookies'
 
-const UserEntity = require("../../entity/UserEntity")
+const UserEntity = require("../entity/UserEntity")
 const userObject = new UserEntity()
 
-const BrandEntity = require("../../entity/BrandEntity")
+const BrandEntity = require("../entity/BrandEntity")
 const brandObject = new BrandEntity()
 
 
@@ -21,7 +21,7 @@ export default class Signin extends React.Component {
         // ===============================================
         // CHECKING AUTHENTICATE
         const cookies = parseCookies()
-        if (!cookies.isLoggedIn | !cookies.userID | !cookies.brandID | !cookies.role) Router.push('/v2/signin');
+        if (!cookies.isLoggedIn | !cookies.userID | !cookies.brandID | !cookies.role) Router.push('/signin');
 
         // reset all cookies
         destroyCookie(null,'isLoggedIn',{path:'/'})
@@ -51,7 +51,7 @@ export default class Signin extends React.Component {
                     // Router.push(`/overview/${result[0].fields.brandID[0]}`)
                     
                     console.log('.... success');
-                    Router.push(`/v2/brands/${brand.brandID}/dashboard`)
+                    Router.push(`/brands/${brand.brandID}/dashboard`)
                 } else {
                     $('#notice').removeClass('hide').addClass('show')   
                     $('.spinner-grow').remove()
@@ -66,7 +66,7 @@ export default class Signin extends React.Component {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-5 col-xl-4 my-5">
-                        <h1 className="display-4 text-center mb-3">Đăng nhập v2</h1>
+                        <h1 className="display-4 text-center mb-3">Đăng nhập</h1>
                         <p className="text-muted text-center mb-5">Kinh doanh món ăn thức uống dễ dàng và chuyên nghiệp hơn với nền tảng Delivery được phát triển bởi CabinFood.</p>
                         
                         <div>

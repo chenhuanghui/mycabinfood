@@ -4,17 +4,17 @@ import Link from 'next/link';
 import $, { data } from 'jquery'
 import { parseCookies, setCookie, destroyCookie } from 'nookies'
 
-import NavBar from "../../../../components_v2/nav"
-import PostInput from "../../../../components_v2/post/post-input"
-import PostShow from "../../../../components_v2/post/post-show"
+import NavBar from "../../../components_v2/nav"
+import PostInput from "../../../components_v2/post/post-input"
+import PostShow from "../../../components_v2/post/post-show"
 
-const BrandEntity = require("../../../../entity/BrandEntity")
+const BrandEntity = require("../../../entity/BrandEntity")
 const brandObject = new BrandEntity()
 
-const UserEntity = require("../../../../entity/UserEntity")
+const UserEntity = require("../../../entity/UserEntity")
 const userObject = new UserEntity()
 
-const FeedEntity = require("../../../../entity/FeedEntity")
+const FeedEntity = require("../../../entity/FeedEntity")
 const feedObject = new FeedEntity()
 
 const cookies = parseCookies()

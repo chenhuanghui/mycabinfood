@@ -5,7 +5,7 @@ import { parseCookies, setCookie, destroyCookie } from 'nookies'
 import Link from 'next/link'
 
 import TextareaAutosize from 'react-textarea-autosize';
-import NavBar from "../../../components_v2/nav"
+import NavBar from "../../components_v2/nav"
 
 const AirtablePlus = require('airtable-plus');  
 

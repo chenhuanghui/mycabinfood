@@ -2,15 +2,15 @@ import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
 import $, { data } from 'jquery'
-import NavBar from "../../../../components_v2/nav"
+import NavBar from "../../../components_v2/nav"
 
-const BrandEntity = require("../../../../entity/BrandEntity")
+const BrandEntity = require("../../../entity/BrandEntity")
 const brandObject = new BrandEntity()
 
-const WorkingHoursEntity = require("../../../../entity/WorkinghoursEntity")
+const WorkingHoursEntity = require("../../../entity/WorkinghoursEntity")
 const workingHoursObject = new WorkingHoursEntity()
 
-const OwnerEntity = require("../../../../entity/OwnerEntity")
+const OwnerEntity = require("../../../entity/OwnerEntity")
 const ownerObject = new OwnerEntity()
 
 export default class LayoutInfo extends React.Component {
