@@ -77,7 +77,7 @@ export default class LayoutDashboard extends React.Component {
                     brand_name={this.props.brand.name}
                 />
 
-                <div className="main-content">
+                <div className="main-content mt-6 mt-md-0">
                     <div className="container-fluid">
                         <div className="row mt-4 mt-md-5 justify-content-center">
                             <div className="col-12 col-lg-10 col-xl-8">                                

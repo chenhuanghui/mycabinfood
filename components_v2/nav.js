@@ -154,6 +154,11 @@ export default class NavBarNew extends React.Component {
                 </div>
 
                 <style jsx>{`
+                .navbar {
+                    position: fixed;
+                    width: 100%;
+                    top: 0px;
+                }
                 .logout{cursor: pointer;}
                 .navbar-brand {
                     white-space: normal !important;
