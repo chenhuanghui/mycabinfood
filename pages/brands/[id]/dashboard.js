@@ -20,9 +20,8 @@ const milestoneObject = new MilestoneEntity()
 const WorkingHoursEntity = require("../../../entity/WorkinghoursEntity")
 const workingHoursObject = new WorkingHoursEntity()
 
-const OwnerEntity = require("../../../entity/OwnerEntity")
-const ownerObject = new OwnerEntity()
-
+// const OwnerEntity = require("../../../entity/OwnerEntity")
+// const ownerObject = new OwnerEntity()
 
 
 export default class LayoutDashboard extends React.Component {
@@ -60,8 +59,8 @@ export default class LayoutDashboard extends React.Component {
         const workingHours = await workingHoursObject.getWorkingHoursByBrandID(this.props.brand.ID)
         currentComponent.setState({workingHours: workingHours})
 
-        const owner = await ownerObject.getOwnerByBrandID(this.props.brand.ID)
-        currentComponent.setState({owner: owner})
+        // const owner = await ownerObject.getOwnerByBrandID(this.props.brand.ID)
+        // currentComponent.setState({owner: owner})
     }
 
     render() {
